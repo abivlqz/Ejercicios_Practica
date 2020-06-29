@@ -1,0 +1,11 @@
+// Existe la ordenación externa e interna.
+// dentro de la ordenacion interna existen varios tipos
+// los directos o básicos: burbuja, insercion, seleccion
+// mejor en listas pequeñas
+// indirectos o avanzados: shell, quick sort, merge sort, radix sort
+// 
+//
+//
+//
+//
+//
