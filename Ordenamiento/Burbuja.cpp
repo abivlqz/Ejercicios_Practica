@@ -30,7 +30,11 @@ int main (){
     for (int k = 0; k<5; k++) {
         cout<<array[k]<<" ";
     }
-    
+    cout<<endl;
+    cout<<"orden descendente"<<endl;
+    for (int k = 4; k>=0; k--) {
+        cout<<array[k]<<" ";
+    }
     
     return 0;
 }
