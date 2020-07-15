@@ -44,7 +44,7 @@ void PedirDatos(){
 
 void funpot(int x, int y){
     
-    int resultado;
+    long resultado; //por si el exponente hace al resultado muy alto
     
     resultado = pow(y, x);
     
