@@ -18,13 +18,13 @@ void PedirDatos();
 void funpot(int x, int y);
 
 // Variables globales
-int num1;
-int num2= 0;
+int exponente= 0;
+int numero;
 
 int main(){
     
     PedirDatos();
-    funpot(num1, num2);
+    funpot(numero, exponente);
     
     
     return 0;
@@ -33,11 +33,11 @@ int main(){
 
 // Defincion de funciones
 void PedirDatos(){
-    cout<<"Ingrese una potencia (y)"<<endl;
-    cin>>num1;
-    while (num2<1) {
-         cout<<"Ingrese un numero positivo (x) "<<endl;
-            cin>>num2;
+    cout<<"Ingrese un numero positivo (x) "<<endl;
+    cin>>numero;
+    while (exponente<1) {
+         cout<<"Ingrese la potencia a la cual lo quiere elevar "<<endl;
+            cin>>exponente;
     }
 }
 
@@ -46,7 +46,7 @@ void funpot(int x, int y){
     
     long resultado; //por si el exponente hace al resultado muy alto
     
-    resultado = pow(y, x);
+    resultado = pow(x, y);
     
     cout<<"el resultado de x^y es "<<resultado<<endl;
     
