@@ -8,20 +8,25 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
 struct Persona {
     char nombre[20];
     int edad;
-}persona1 = {"Abigail",20},
-persona2 = {"Alejandro",20};
+}persona1;
 
 int main(){
-    cout<<"Nombre1: "<<persona1.nombre<<endl;
-    cout<<"Edad1: "<<persona1.edad<<endl;
+    cout<<"Digita  nombre1: "<<endl;
+    cin.getline(persona1.nombre,20);
     
-    cout<<"Nombre2: "<<persona2.nombre<<endl;
-    cout<<"Edad2: "<<persona2.edad<<endl;
+    cout<<"Edad1: "<<endl;
+    cin>>persona1.edad;
+    
+    
+    cout<<"Imprimiendo datos"<<endl;
+    cout<<"Nombre "<<persona1.nombre<<endl;
+     cout<<"edad "<<persona1.edad<<endl;
     return 0;
 }
